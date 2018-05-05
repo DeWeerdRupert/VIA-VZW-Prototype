@@ -1,0 +1,413 @@
+/* RESET CSS */
+@import "reset.scss";
+/* Variables Sass */
+@import "variables.scss";
+/* SVG's */
+@import "svgs.scss";
+
+*, header, main, footer, nav, section { box-sizing: border-box; transform-origin: 50% 50%;}
+
+/* MOBILE FIRST STYLING preset */
+html {
+  max-width: 55em; /* Mobile first - older browsers */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 62.5%; /* 1em = 10px */
+}
+
+img {
+  width: 100%;
+}
+
+/* ___--- MOBILE FIRST STYLING ---___ */
+
+/* --- TYPOGRAPHY --- */
+
+html {
+  font-family: $bodyFont;
+}
+
+h1, p.logoBaseline {
+  color: $logoPurple;
+  font-family: $headingFont;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
+h2 {
+  color: $logoGreen;
+  font-family: $headingFont;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
+div.banner-content h2 {
+  color: white;
+  text-shadow: 0 0 0.5rem black;
+  font-weight: 600;
+  text-align: left;
+  transform: translate(-50%, -50%);
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
+section h2 {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+}
+
+h3 {
+  color: $projectOrange;
+  font-family: $headingFont;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
+h4 {
+  color: $projectOrange;
+  font-family: $headingFont;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
+h5 {
+  color: $projectOrange;
+  font-family: $headingFont;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
+p {
+  color: $projectGrey5;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
+nav {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
+main li, main li p {
+  color: $projectGrey5;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
+figcaption {
+  width: 90%;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: rgba(#562969, 0.5);
+  padding: 1rem;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+button {
+  color: white;
+  text-align: center;
+  font-family: $headingFont;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  &:hover {
+    color: $logoGreen;
+  }
+  & span {
+    font-family: $bodyFont;
+    text-transform: none;
+    font-weight: 300;
+  }
+}
+
+
+/* - Links TYPO */
+a {
+  color: $projectBlue;
+  text-decoration: none;
+  &:visited {
+    color: $projectBlue;
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
+p a {
+  text-decoration: underline;
+}
+
+/* --- HEADER --- */
+
+/* - navigation - */
+nav {
+  width: 95%;
+  padding: 2rem;
+  border-top: 0.1rem solid $projectGrey2;
+  border-bottom: 0.1rem solid $projectGrey2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+
+  a, a:visited {
+    display: flex;
+    padding: 1rem;
+    color: $projectGrey5;
+    text-decoration: none;
+  }
+
+  a:hover, a:active {
+    color: white;
+    background-color: $projectGrey2;
+    border-radius: 0.2rem;
+  }
+
+  svg.icon {
+    fill: $projectGrey2;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+  }
+
+  ul.menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul ul {
+    display: none;
+  }
+
+  ul li:hover > ul {
+    display: block;
+  }
+
+  li.menu-item-has-children li {
+    padding-left: 2rem;
+  }
+
+}
+
+/* --- MAIN --- */
+main {
+  padding: 1rem;
+}
+
+main.contact-page {
+  section, section p {
+    text-align: center;
+    :nth-child(1) {
+      color: $logoGreen;
+      font-size: 3rem;
+      font-weight: 200;
+    }
+    .icon {
+      fill: $logoGreen;
+    }
+  }
+}
+
+section {
+  padding: 1rem;
+}
+
+
+/* --- Buttons --- */
+
+button {
+  box-sizing: border-box;
+  display: block;
+  cursor: pointer;
+  width: 95%;
+  background-color: $logoGreen;
+  border: 0.1rem solid $logoGreen;
+  border-radius: 1.2rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  &:hover {
+    background-color: white;
+  }
+}
+button.purple-btn {
+  background-color: $logoPurple;
+  border: 0.1rem solid $logoPurple;
+}
+
+button.purple-btn:hover {
+  color: $logoPurple;
+  background-color: white;
+}
+
+button.orange-btn {
+  background-color: $projectOrange;
+  border: 0.1rem solid $projectOrange;
+}
+
+button.orange-btn:hover {
+  color: $projectOrange;
+  background-color: white;
+}
+
+/* --- Images --- */
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 42.8571%; /* 21:9 */
+  background-image: url("../img/AlexandrPodvalny.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+	height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+figure {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  position: absolute;
+}
+
+/* --- iframes --- */
+
+iframe {
+  width: 100%;
+  border: none;
+}
+
+/* - Video - */
+div.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+  margin-bottom: 1rem;
+}
+
+div.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+div.google-maps {
+  margin-top: 2rem;
+}
+
+div.google-maps iframe {
+  height: 30rem;
+}
+
+/* --- LISTS --- */
+/* - unordered - */
+
+main ul {
+  padding: 1rem;
+}
+
+
+/* Accessibility */
+/**:focus {
+  box-sizing: border-box !important;
+  outline: 0.3rem solid $projectBlue !important;
+  color: white !important;
+  background-color: $logoPurple !important;
+  padding: 1rem !important;
+}
+
+svg.logo:focus {
+  outline: none !important;
+  color: white !important;
+  background-color: white !important;
+  padding: 0 !important;
+}*/
+
+
+/* ___--- MEDIA QUERRIES ---___ */
+
+
+/* Browser Supports CSS-Grids */
+@supports (grid-area: auto) {
+
+  @media screen and (min-width: 80em) {
+
+    /* Code here... */
+
+  }
+
+}

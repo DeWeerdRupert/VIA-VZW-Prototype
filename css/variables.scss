@@ -1,0 +1,35 @@
+/* __Project Fonts___ */
+
+/* Headings */
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+$headingFont: 'Montserrat', sans-serif;
+
+/* Body Text */
+/* Kanit */
+@import url('https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,thai,vietnamese');
+
+$bodyFont: 'Kanit', sans-serif;
+
+/* __Project Colors__ */
+
+/* Logo */
+$logoPurple: #562969;
+$logoGreen: #96C12C;
+$logoViolet: #D8CEDC;
+
+/* Colors */
+$projectBlue: #5EBEB8;
+$projectDarkGreen: #359434;
+$projectOrange: #EF8728;
+
+/* Greys */
+$projectGrey1: #F0EDE8;
+$projectGrey2: #D7D5D0;
+$projectGrey3: #BFBDB9;
+$projectGrey4: #A3A29E;
+$projectGrey5: #878683;
+$projectGrey6: #666563;
+$projectGrey7: #4A4948;
+$projectGrey8: #292827;
+$projectGrey9: #141414;

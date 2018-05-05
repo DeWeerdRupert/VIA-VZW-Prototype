@@ -1,0 +1,460 @@
+/* RESET CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,thai,vietnamese");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Variables Sass */
+/* __Project Fonts___ */
+/* Headings */
+/* Montserrat */
+/* Body Text */
+/* Kanit */
+/* __Project Colors__ */
+/* Logo */
+/* Colors */
+/* Greys */
+/* SVG's */
+.allSVGs {
+  display: none; }
+
+svg {
+  width: 100%; }
+
+.svg_via, .svg_paarsOoglid, .svg_water {
+  fill: #562969; }
+
+.svg_groenOoglid, .svg_groenWereld {
+  fill: #96C12C; }
+
+.svg_golven {
+  fill: #D8CEDC; }
+
+/* ICONS */
+.icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 0; }
+
+/* List */
+main ul li svg {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 0; }
+
+*, header, main, footer, nav, section {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+
+/* MOBILE FIRST STYLING preset */
+html {
+  max-width: 55em;
+  /* Mobile first - older browsers */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 62.5%;
+  /* 1em = 10px */ }
+
+img {
+  width: 100%; }
+
+/* ___--- MOBILE FIRST STYLING ---___ */
+/* --- TYPOGRAPHY --- */
+html {
+  font-family: "Kanit", sans-serif; }
+
+h1, p.logoBaseline {
+  color: #562969;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem; }
+  h1::-moz-selection, p.logoBaseline::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  h1::selection, p.logoBaseline::selection {
+    color: white;
+    background-color: #96C12C; }
+
+h2 {
+  color: #96C12C;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+  margin-bottom: 1rem; }
+  h2::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  h2::selection {
+    color: white;
+    background-color: #96C12C; }
+
+div.banner-content h2 {
+  color: white;
+  text-shadow: 0 0 0.5rem black;
+  font-weight: 600;
+  text-align: left;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  div.banner-content h2::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  div.banner-content h2::selection {
+    color: white;
+    background-color: #96C12C; }
+
+section h2 {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 400; }
+
+h3 {
+  color: #EF8728;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin-bottom: 1rem; }
+  h3::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  h3::selection {
+    color: white;
+    background-color: #96C12C; }
+
+h4 {
+  color: #EF8728;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem; }
+  h4::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  h4::selection {
+    color: white;
+    background-color: #96C12C; }
+
+h5 {
+  color: #EF8728;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem; }
+  h5::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  h5::selection {
+    color: white;
+    background-color: #96C12C; }
+
+p {
+  color: #878683;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2rem;
+  text-align: left;
+  margin-bottom: 1rem; }
+  p::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  p::selection {
+    color: white;
+    background-color: #96C12C; }
+
+nav {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase; }
+  nav::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  nav::selection {
+    color: white;
+    background-color: #96C12C; }
+
+main li, main li p {
+  color: #878683;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 1rem; }
+  main li::-moz-selection, main li p::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  main li::selection, main li p::selection {
+    color: white;
+    background-color: #96C12C; }
+
+figcaption {
+  width: 90%;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: rgba(86, 41, 105, 0.5);
+  padding: 1rem;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
+
+button {
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none; }
+  button:hover {
+    color: #96C12C; }
+  button span {
+    font-family: "Kanit", sans-serif;
+    text-transform: none;
+    font-weight: 300; }
+
+/* - Links TYPO */
+a {
+  color: #5EBEB8;
+  text-decoration: none; }
+  a:visited {
+    color: #5EBEB8;
+    text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  a::selection {
+    color: white;
+    background-color: #96C12C; }
+
+p a {
+  text-decoration: underline; }
+
+/* --- HEADER --- */
+/* - navigation - */
+nav {
+  width: 95%;
+  padding: 2rem;
+  border-top: 0.1rem solid #D7D5D0;
+  border-bottom: 0.1rem solid #D7D5D0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem; }
+  nav a, nav a:visited {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    color: #878683;
+    text-decoration: none; }
+  nav a:hover, nav a:active {
+    color: white;
+    background-color: #D7D5D0;
+    border-radius: 0.2rem; }
+  nav svg.icon {
+    fill: #D7D5D0;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.3rem; }
+  nav ul.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  nav ul ul {
+    display: none; }
+  nav ul li:hover > ul {
+    display: block; }
+  nav li.menu-item-has-children li {
+    padding-left: 2rem; }
+
+/* --- MAIN --- */
+main {
+  padding: 1rem; }
+
+main.contact-page section, main.contact-page section p {
+  text-align: center; }
+  main.contact-page section :nth-child(1), main.contact-page section p :nth-child(1) {
+    color: #96C12C;
+    font-size: 3rem;
+    font-weight: 200; }
+  main.contact-page section .icon, main.contact-page section p .icon {
+    fill: #96C12C; }
+
+section {
+  padding: 1rem; }
+
+/* --- Buttons --- */
+button {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  cursor: pointer;
+  width: 95%;
+  background-color: #96C12C;
+  border: 0.1rem solid #96C12C;
+  border-radius: 1.2rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem; }
+  button:hover {
+    background-color: white; }
+
+button.purple-btn {
+  background-color: #562969;
+  border: 0.1rem solid #562969; }
+
+button.purple-btn:hover {
+  color: #562969;
+  background-color: white; }
+
+button.orange-btn {
+  background-color: #EF8728;
+  border: 0.1rem solid #EF8728; }
+
+button.orange-btn:hover {
+  color: #EF8728;
+  background-color: white; }
+
+/* --- Images --- */
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 42.8571%;
+  /* 21:9 */
+  background-image: url("../img/AlexandrPodvalny.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+figure {
+  position: relative;
+  margin-bottom: 1rem; }
+
+figcaption {
+  position: absolute; }
+
+/* --- iframes --- */
+iframe {
+  width: 100%;
+  border: none; }
+
+/* - Video - */
+div.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  margin-bottom: 1rem; }
+
+div.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+div.google-maps {
+  margin-top: 2rem; }
+
+div.google-maps iframe {
+  height: 30rem; }
+
+/* --- LISTS --- */
+/* - unordered - */
+main ul {
+  padding: 1rem; }
+
+/* Accessibility */
+/**:focus {
+  box-sizing: border-box !important;
+  outline: 0.3rem solid $projectBlue !important;
+  color: white !important;
+  background-color: $logoPurple !important;
+  padding: 1rem !important;
+}
+
+svg.logo:focus {
+  outline: none !important;
+  color: white !important;
+  background-color: white !important;
+  padding: 0 !important;
+}*/
+/* ___--- MEDIA QUERRIES ---___ */
+/* Browser Supports CSS-Grids */
+@supports (grid-area: auto) {
+  @media screen and (min-width: 80em) {
+    /* Code here... */ } }

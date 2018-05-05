@@ -1,0 +1,37 @@
+.allSVGs {
+  display: none;
+}
+
+svg {
+  width: 100%;
+}
+
+.svg_via, .svg_paarsOoglid, .svg_water {
+  fill: $logoPurple;
+}
+
+.svg_groenOoglid, .svg_groenWereld {
+  fill: $logoGreen;
+}
+
+.svg_golven {
+  fill: $logoViolet;
+}
+
+
+/* ICONS */
+.icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 0;
+}
+
+
+/* List */
+main ul li svg {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 0;
+}

@@ -1,0 +1,34 @@
+/* - navigation - */
+nav {
+  width: 75%;
+  margin: auto; }
+  nav ul.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  nav li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  nav li {
+    display: block;
+    list-style-type: none;
+    padding: 1rem;
+    margin: auto; }
+  nav li svg.icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.3rem; }
+  nav li.menu-item-has-children {
+    margin-left: 0.2rem; }
+
+nav ul ul {
+  display: none; }
+
+nav ul li:hover > ul {
+  display: block; }
