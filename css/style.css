@@ -117,6 +117,7 @@ h1, p.logoBaseline {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 700;
+  line-height: 2.5rem;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1rem; }
@@ -158,15 +159,15 @@ div.banner-content h2 {
 
 section h2 {
   font-size: 2.5rem;
-  line-height: 3rem;
+  line-height: 3.2rem;
   font-weight: 400; }
 
 h3 {
   color: #EF8728;
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 300;
-  line-height: 3rem;
+  line-height: 3.5rem;
   margin-bottom: 1rem; }
   h3::-moz-selection {
     color: white;
@@ -179,7 +180,7 @@ h4 {
   color: #EF8728;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 2.8rem;
   margin-bottom: 0.5rem; }
   h4::-moz-selection {
@@ -231,8 +232,9 @@ nav {
 
 main li, main li p {
   color: #878683;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
   text-align: center;
   margin-bottom: 1rem; }
   main li::-moz-selection, main li p::-moz-selection {
@@ -436,7 +438,10 @@ div.google-maps iframe {
 /* --- LISTS --- */
 /* - unordered - */
 main ul {
+  border: 1px solid red;
   padding: 1rem; }
+  main ul li {
+    border: 1px solid red; }
 
 /* Accessibility */
 /**:focus {
