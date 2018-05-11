@@ -148,10 +148,7 @@ div.banner-content h2 {
   color: white;
   text-shadow: 0 0 0.5rem black;
   font-weight: 600;
-  text-align: left;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  text-align: left; }
   div.banner-content h2::-moz-selection {
     color: white;
     background-color: #96C12C; }
@@ -214,6 +211,8 @@ p {
   line-height: 2.8rem;
   text-align: left;
   margin-bottom: 1rem; }
+  p.align-right {
+    text-align: right; }
   p::-moz-selection {
     color: white;
     background-color: #96C12C; }
@@ -235,7 +234,7 @@ nav {
 main li, main li p {
   color: #878683;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2.5rem;
   text-align: center;
   margin-bottom: 1rem; }
@@ -359,13 +358,11 @@ a.button {
   box-sizing: border-box;
   display: block;
   cursor: pointer;
-  width: 95%;
+  width: 100%;
   background-color: #96C12C;
   border: 0.1rem solid #96C12C;
   border-radius: 1.2rem;
   padding: 1.5rem 1rem 1.5rem 1rem;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 1rem; }
   a.button:hover {
     background-color: white; }
@@ -399,12 +396,14 @@ a.button.orange-button:hover {
 
 .banner-content {
   position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   width: 100%;
   height: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  padding: 1rem; }
 
 figure {
   position: relative;
@@ -440,12 +439,6 @@ div.google-maps iframe {
 
 /* --- LISTS --- */
 /* - unordered - */
-main ul {
-  border: 1px solid red;
-  padding: 1rem; }
-  main ul li {
-    border: 1px solid red; }
-
 /* Accessibility */
 /**:focus {
   box-sizing: border-box !important;

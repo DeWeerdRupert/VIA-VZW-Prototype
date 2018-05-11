@@ -60,7 +60,6 @@ div.banner-content h2 {
   text-shadow: 0 0 0.5rem black;
   font-weight: 600;
   text-align: left;
-  transform: translate(-50%, -50%);
   &::selection {
     color: white;
     background-color: $logoGreen;
@@ -120,6 +119,9 @@ p {
   line-height: 2.8rem;
   text-align: left;
   margin-bottom: 1rem;
+  &.align-right {
+    text-align: right;
+  }
   &::selection {
     color: white;
     background-color: $logoGreen;
@@ -139,7 +141,7 @@ nav {
 main li, main li p {
   color: $projectGrey5;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -284,13 +286,11 @@ a.button {
   box-sizing: border-box;
   display: block;
   cursor: pointer;
-  width: 95%;
+  width: 100%;
   background-color: $logoGreen;
   border: 0.1rem solid $logoGreen;
   border-radius: 1.2rem;
   padding: 1.5rem 1rem 1.5rem 1rem;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 1rem;
   &:hover {
     background-color: white;
@@ -326,14 +326,15 @@ a.button.orange-button:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .banner-content {
   position: absolute;
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   width: 100%;
 	height: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
 }
 
 figure {
@@ -377,14 +378,6 @@ div.google-maps iframe {
 
 /* --- LISTS --- */
 /* - unordered - */
-
-main ul {
-  border: 1px solid red;
-  padding: 1rem;
-  & li {
-    border: 1px solid red;
-  }
-}
 
 
 /* Accessibility */
