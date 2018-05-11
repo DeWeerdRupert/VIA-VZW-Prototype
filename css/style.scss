@@ -162,25 +162,6 @@ figcaption {
   transform: translate(-50%, 0);
 }
 
-button {
-  color: white;
-  text-align: center;
-  font-family: $headingFont;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  &:hover {
-    color: $logoGreen;
-  }
-  & span {
-    font-family: $bodyFont;
-    text-transform: none;
-    font-weight: 300;
-  }
-}
-
-
 /* - Links TYPO */
 a {
   color: $projectBlue;
@@ -200,6 +181,25 @@ a {
 
 p a {
   text-decoration: underline;
+}
+
+a.button {
+  color: white;
+  text-align: center;
+  font-family: $headingFont;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  text-decoration: none;
+  &:hover {
+    color: $logoGreen;
+  }
+  & span {
+    font-family: $bodyFont;
+    text-transform: none;
+    font-weight: 300;
+  }
 }
 
 /* --- HEADER --- */
@@ -280,7 +280,7 @@ section {
 
 /* --- Buttons --- */
 
-button {
+a.button {
   box-sizing: border-box;
   display: block;
   cursor: pointer;
@@ -296,22 +296,22 @@ button {
     background-color: white;
   }
 }
-button.purple-btn {
+a.button.purple-button {
   background-color: $logoPurple;
   border: 0.1rem solid $logoPurple;
 }
 
-button.purple-btn:hover {
+a.button.purple-button:hover {
   color: $logoPurple;
   background-color: white;
 }
 
-button.orange-btn {
+a.button.orange-button {
   background-color: $projectOrange;
   border: 0.1rem solid $projectOrange;
 }
 
-button.orange-btn:hover {
+a.button.orange-button:hover {
   color: $projectOrange;
   background-color: white;
 }

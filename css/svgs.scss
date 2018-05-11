@@ -29,9 +29,11 @@ svg {
 
 
 /* List */
-main ul li svg {
+ul li svg {
   display: inline-block;
   width: 2rem;
   height: 2rem;
   stroke-width: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
