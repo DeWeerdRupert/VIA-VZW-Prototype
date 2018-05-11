@@ -95,7 +95,10 @@ ul li svg {
   box-sizing: border-box;
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%; }
+  transform-origin: 50% 50%;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
 
 /* MOBILE FIRST STYLING preset */
 html {
@@ -204,6 +207,20 @@ h5 {
     color: white;
     background-color: #96C12C; }
 
+h6 {
+  color: #96C12C;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  margin-bottom: 0.5rem; }
+  h6::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  h6::selection {
+    color: white;
+    background-color: #96C12C; }
+
 p {
   color: #878683;
   font-size: 2rem;
@@ -244,6 +261,10 @@ main li, main li p {
   main li::selection, main li p::selection {
     color: white;
     background-color: #96C12C; }
+
+ul.skills li p {
+  text-align: left;
+  font-weight: 300; }
 
 figcaption {
   width: 90%;
@@ -439,6 +460,22 @@ div.google-maps iframe {
 
 /* --- LISTS --- */
 /* - unordered - */
+main ul li:nth-child(1) svg {
+  display: none; }
+
+main ul.skills li {
+  text-align: left;
+  position: relative; }
+  main ul.skills li svg {
+    display: inline-block;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0.5rem; }
+  main ul.skills li p {
+    margin-left: 3rem;
+    margin-bottom: 2rem; }
+
 /* Accessibility */
 /**:focus {
   box-sizing: border-box !important;

@@ -5,7 +5,7 @@
 /* SVG's */
 @import "svgs.scss";
 
-*, header, main, footer, nav, section { box-sizing: border-box; transform-origin: 50% 50%;}
+*, header, main, footer, nav, section { box-sizing: border-box; transform-origin: 50% 50%; transition: all 0.2s ease-in;}
 
 /* MOBILE FIRST STYLING preset */
 html {
@@ -112,6 +112,19 @@ h5 {
   }
 }
 
+h6 {
+  color: $logoGreen;
+  font-family: $headingFont;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  margin-bottom: 0.5rem;
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
 p {
   color: $projectGrey5;
   font-size: 2rem;
@@ -148,6 +161,13 @@ main li, main li p {
   &::selection {
     color: white;
     background-color: $logoGreen;
+  }
+}
+
+ul.skills {
+  & li p {
+    text-align: left;
+    font-weight: 300;
   }
 }
 
@@ -378,6 +398,27 @@ div.google-maps iframe {
 
 /* --- LISTS --- */
 /* - unordered - */
+main ul li:nth-child(1) {
+  svg {
+    display: none;
+  }
+}
+
+main ul.skills li {
+  text-align: left;
+  position: relative;
+  svg {
+    display: inline-block;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0.5rem;
+  }
+  p {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+}
 
 
 /* Accessibility */
