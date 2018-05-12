@@ -221,6 +221,22 @@ h6 {
     color: white;
     background-color: #96C12C; }
 
+dt.question button {
+  color: #562969;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 2.8rem;
+  margin-bottom: 0.5rem; }
+  dt.question button::-moz-selection {
+    color: white;
+    background-color: #96C12C; }
+  dt.question button::selection {
+    color: white;
+    background-color: #96C12C; }
+
 p {
   color: #878683;
   font-size: 2rem;
@@ -236,6 +252,9 @@ p {
   p::selection {
     color: white;
     background-color: #96C12C; }
+
+p strong {
+  font-weight: 400; }
 
 nav {
   font-size: 1.8rem;
@@ -263,6 +282,10 @@ main li, main li p {
     background-color: #96C12C; }
 
 ul.skills li p {
+  text-align: left;
+  font-weight: 300; }
+
+dd ul li, dd ul li p {
   text-align: left;
   font-weight: 300; }
 
@@ -374,6 +397,7 @@ section {
   padding: 1rem; }
 
 /* --- Buttons --- */
+/* Links */
 a.button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -403,6 +427,23 @@ a.button.orange-button {
 a.button.orange-button:hover {
   color: #EF8728;
   background-color: white; }
+
+/* buttons */
+dt.question button {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  border: 0;
+  border-bottom: 0.1rem solid #96C12C;
+  margin-bottom: 1rem;
+  margin-top: 2rem; }
+
+dd {
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease; }
 
 /* --- Images --- */
 .banner-wrapper {
@@ -476,8 +517,17 @@ main ul.skills li {
     margin-left: 3rem;
     margin-bottom: 2rem; }
 
+/* --- FAQ --- */
+dl {
+  width: 100%; }
+
+.answer {
+  max-height: 0;
+  overflow: hidden; }
+
 /* Accessibility */
-/**:focus {
+/*
+*:focus {
   box-sizing: border-box !important;
   outline: 0.3rem solid $projectBlue !important;
   color: white !important;

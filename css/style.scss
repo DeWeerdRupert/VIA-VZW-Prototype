@@ -125,6 +125,21 @@ h6 {
   }
 }
 
+dt.question button {
+  color: $logoPurple;
+  background-color: white;
+  font-family: $headingFont;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 2.8rem;
+  margin-bottom: 0.5rem;
+  &::selection {
+    color: white;
+    background-color: $logoGreen;
+  }
+}
+
 p {
   color: $projectGrey5;
   font-size: 2rem;
@@ -139,6 +154,10 @@ p {
     color: white;
     background-color: $logoGreen;
   }
+}
+
+p strong {
+  font-weight: 400;
 }
 
 nav {
@@ -169,6 +188,11 @@ ul.skills {
     text-align: left;
     font-weight: 300;
   }
+}
+
+dd ul li, dd ul li p {
+  text-align: left;
+  font-weight: 300;
 }
 
 figcaption {
@@ -301,7 +325,7 @@ section {
 
 
 /* --- Buttons --- */
-
+/* Links */
 a.button {
   box-sizing: border-box;
   display: block;
@@ -334,6 +358,22 @@ a.button.orange-button {
 a.button.orange-button:hover {
   color: $projectOrange;
   background-color: white;
+}
+
+/* buttons */
+dt.question button {
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    border: 0;
+    border-bottom: 0.1rem solid $logoGreen;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+dd {
+  transition: 0.4s ease;
 }
 
 /* --- Images --- */
@@ -420,9 +460,24 @@ main ul.skills li {
   }
 }
 
+/* --- FAQ --- */
+
+dl {
+	width: 100%;
+}
+
+.active, .question:hover {
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+}
+
 
 /* Accessibility */
-/**:focus {
+/*
+*:focus {
   box-sizing: border-box !important;
   outline: 0.3rem solid $projectBlue !important;
   color: white !important;
